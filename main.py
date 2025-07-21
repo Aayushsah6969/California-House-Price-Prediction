@@ -3,8 +3,18 @@
 from fastapi import FastAPI
 from app.api import router as api_router, predict
 from app.db.db import db_connection  # Import the function
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+# ✅ Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # Your React dev server
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Test DB connection on startup
 db_connection()
