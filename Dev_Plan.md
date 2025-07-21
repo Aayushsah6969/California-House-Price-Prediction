@@ -1,5 +1,25 @@
 pip install fastapi uvicorn psycopg2-binary sqlalchemy pydantic python-dotenv joblib scikit-learn
 
+📌 Your Original Phase-1 Plan Recap:
+✅ Use FastAPI backend
+
+✅ PostgreSQL for database
+
+⏳ Train & serve ML models (top 5)
+
+⏳ Create API routes for model predictions
+
+⏳ Save model outputs + user feedback
+
+⏳ Create admin interface to review metrics
+
+⏳ Admin can push new data for training
+
+⏳ Admin can upload CSV for batch training
+
+⏳ Frontend: React app to interact with models
+
+
 # ML Prediction Web App — Development Plan
 
 This plan details the development of a machine learning web app using **FastAPI** (backend), **PostgreSQL** (database), and **React** (frontend). Users can input features, view predictions from 5 ML models, provide feedback, and admins can monitor performance and upload new data.
