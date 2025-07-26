@@ -1,5 +1,7 @@
 venv
 # Ignore saved ML model files
 app/ml/models/ 
-
+__pycache__/
+*.pkl
+.env
 
