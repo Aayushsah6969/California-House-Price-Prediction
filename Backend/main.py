@@ -2,7 +2,7 @@
 
 from fastapi import FastAPI
 from app.api import router as api_router, predict
-from app.db.db import db_connection  # Import the function
+#from app.db.db import db_connection  # Import the function
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -17,6 +17,6 @@ app.add_middleware(
 )
 
 # Test DB connection on startup
-db_connection()
+# db_connection()
 app.include_router(predict.router)
 app.include_router(api_router)
